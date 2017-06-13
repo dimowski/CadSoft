@@ -1,0 +1,29 @@
+language: java
+jdk:
+- oraclejdk8
+sudo: false
+cache:
+  directories:
+  - "$HOME/.m2"
+before_install:
+- chmod +x mvnw
+script:
+- "./mvnw clean"
+- "./mvnw test"
+- "./mvnw package -DskipTests"
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    on_success: change
+    on_failure: always
+    on_start: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: QfYJblWlvgFW7SWoaE/m3N1WfiJnrEy9d5WQgfrxKVocE5nqlVCwJosrw9gr220LhPz2M7UtujJwPwZ+hRhCOhedOAQJAr2HjVDE6JBIfwJjqGj/iVobcAWLORAnM78eZy0PvIa8pF8xXZ+JKc4YKAEXFstr0UeNU3Z+uqhuhzYSwnbJQk1OJs5fvPEVZKsJD+twQAfGXLKFW8APmF9nyFzak24z3yvbw/my73cig/M4u0hzzeOpiywVtSKd9HbiE5wh2zQHbAbkXc5ektolZ59gXty7FiVCAHOw5D8r/vD9RyOy7xOfCdRJUc4ltY7jnWXzSHesmoFu15CCAUHiTQqtJIeRlCPMsZJioJ5bqcvyZP2JJVUV210jvY87H7JZsEFP1Nt+IkJNfpgt4ivcodiirgUHrbHYrUt+LxNXQWbh+WRIo6sijypjsf1SHF+dTG9BF6EgE/nXHb1x5ww2kdWqbvqGru4OorNuE5lBFCqVAPDmrJWyyLpTkgFXi5hADiA4OFV/OqD7r85JwehlIlWdTqa3M60lI5sR4vnmMfVDaqxPeluqAj0fHB61l3z2G4IBXXW+JwCruG5rx9JDQbWO5c/hDJnxwDU1669uhRWcgKpKWvTts0R9qnk/ZE9OzHvGAkrfWwg9oF394UD+tgMQcG8zjWg5hF2WcjEmlao=
+  app: cadsoft
+  on:
+    repo: dmkach/CadSoft
+  skip_cleanup: true
