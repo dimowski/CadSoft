@@ -1,12 +1,12 @@
 {
   "name": "CadSoft",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
-  "author": "Dmitry Kachurowski <dimaka4@gmail.com>",
-  "private": true,
+  "version": "0.0.1",
+  "author": "Dmitry Kachurowski",
+  "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "start": "npm run build",
+    "build": "webpack -d",
+    "build:prod": "webpack -p"
   },
   "dependencies": {
     "vue": "^2.3.3",
@@ -17,9 +17,6 @@
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-env": "^1.5.1",
-    "cross-env": "^3.0.0",
-    "css-loader": "^0.25.0",
-    "file-loader": "^0.9.0",
     "vue-loader": "^12.1.0",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.6.1"

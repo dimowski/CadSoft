@@ -15,7 +15,12 @@ new Vue({
   render: h => h(App)
 });
 
-const router = new VueRouter();
+/*
+const router = new VueRouter({
+    routes: [
+        { path: '/', component: App }
+    ],
+});
 
 // Pointing routes to the components they should use
 router.map({
@@ -30,3 +35,4 @@ router.redirect({
 });
 
 router.start(App, '#app');
+*/

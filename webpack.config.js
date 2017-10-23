@@ -1,12 +1,8 @@
-var webpack = require('webpack');
-var path = require('path');
-
 module.exports = {
     entry: './src/main/webapp/main.js',
     output: {
-        path: path.resolve(__dirname, './src/main/webapp'),
-        publicPath: './src/main/webapp',
-        filename: 'build.js'
+        path: __dirname + '/src/main/webapp',
+        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -22,23 +18,7 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
-            },
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]?[hash]'
-                }
             }
         ]
-    },
-    resolve: {
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js'
-        }
-    },
-    performance: {
-        hints: false
-    },
-    devtool: '#eval-source-map'
+    }
 };
