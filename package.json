@@ -4,7 +4,7 @@
   "author": "Dmitry Kachurowski",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build",
+    "start": "npm run build:prod",
     "build": "webpack -d",
     "build:prod": "webpack -p"
   },
