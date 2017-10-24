@@ -19,6 +19,11 @@ public class Comment {
     public Comment() {
     }
 
+    public Comment(String commenter, String content) {
+        this.commenter = commenter;
+        this.content = content;
+    }
+
     public Long getId() {
         return id;
     }
