@@ -1,0 +1,25 @@
+{
+  "name": "CadSoft",
+  "version": "0.0.1",
+  "author": "Dmitry Kachurowski",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d",
+    "build:prod": "webpack -p"
+  },
+  "dependencies": {
+    "vue": "^2.3.3",
+    "vue-resource": "^1.3.4",
+    "vue-router": "^2.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^0.25.0",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1"
+  }
+}
