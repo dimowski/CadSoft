@@ -10,7 +10,7 @@ before_install:
 - chmod +x mvnw
 before_script:
 - "npm install"
-- "webpack -p"
+- "npm run build:prod"
 script:
 - "./mvnw clean"
 - "./mvnw package -DskipTests"
