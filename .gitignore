@@ -1,5 +1,8 @@
+### Project specific ###
 target/
 node_modules/
+src/main/resources/static/bundle.js
+
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
