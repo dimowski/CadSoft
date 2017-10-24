@@ -17,6 +17,7 @@ public class Program {
     private String fullDescription;
     private String shortDescription;
     private byte[] data;
+    private int downloads;
 
     public Program() {
     }
@@ -74,6 +75,14 @@ public class Program {
 
     public void setData(byte[] data) {
         this.data = data;
+    }
+
+    public int getDownloads() {
+        return downloads;
+    }
+
+    public void setDownloads(int downloads) {
+        this.downloads = downloads;
     }
 
     @Override
