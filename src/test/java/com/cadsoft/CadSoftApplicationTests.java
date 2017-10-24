@@ -12,5 +12,4 @@ public class CadSoftApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
