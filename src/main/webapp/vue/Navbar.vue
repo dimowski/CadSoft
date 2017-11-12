@@ -3,13 +3,14 @@
         <nav>
             <ul class="nav nav-pills float-right">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <router-link class="nav-link active" to="/">Home<span class="sr-only">(current)</span>
+                    </router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Applications</a>
+                    <router-link class="nav-link" to="/apps">Applications</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <router-link class="nav-link" to="/contacts">Contact</router-link>
                 </li>
             </ul>
         </nav>

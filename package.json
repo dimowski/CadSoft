@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d",
+    "build": "webpack -d --watch",
     "build:prod": "webpack -p"
   },
   "dependencies": {
