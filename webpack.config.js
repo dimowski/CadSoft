@@ -1,7 +1,7 @@
 module.exports = {
-    entry: './src/main/resources/static/main.js',
+    entry: './src/main/webapp/main.js',
     output: {
-        path: __dirname + '/src/main/resources/static',
+        path: __dirname + '/src/main/webapp',
         filename: 'bundle.js'
     },
     module: {
